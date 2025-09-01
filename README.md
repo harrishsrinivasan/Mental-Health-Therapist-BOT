@@ -1,6 +1,7 @@
 # 👨‍⚕️ Therapist BOT - Mental Health Therapist Chatbot 
 
-This project runs a web-based chatbot that provides empathetic mental health support.  
+This project runs a streamlit web-based chatbot that provides empathetic mental health support.
+It uses llama3.1:8b as its local LLM model using Ollama and when online it uses gemini2.5 flash using google api.
 It uses **two separate containers**:
 
 1. **Ollama** – Offline AI model backend  
