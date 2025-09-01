@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  streamlit:
+    build: .
+    container_name: therapist_bot
+    depends_on:
+      - ollama
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - OLLAMA_BASE_URL=http://ollama:11434
+      - PORT=8501
+    volumes:
+      - ./src:/app
+    restart: unless-stopped
+
+volumes:
+  ollama_data:
+

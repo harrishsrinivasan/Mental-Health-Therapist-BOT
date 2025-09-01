@@ -1,0 +1,4 @@
+python-dotenv==1.1.1
+google-generativeai==0.8.5
+streamlit==1.49.1
+ollama==0.5.3
