@@ -17,8 +17,14 @@ Docker makes it easy to run everything without installing dependencies locally.
 - Online mode via Google Gemini API or offline mode via Ollama in the same chat.
 
 
+
 ---
 
+##  Stremlit User Interface
+![Streamlit User Interface](screenshots/light.png)
+![Streamlit User Interface](screenshots/dark.png)
+
+---
 ## Requirements
 
 - docker
