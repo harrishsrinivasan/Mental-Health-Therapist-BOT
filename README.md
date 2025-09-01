@@ -31,7 +31,7 @@ Docker makes it easy to run everything without installing dependencies locally.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/mental-health-therapist.git
+git clone https://github.com/<your-username>/mental-health-therapist-chatbot.git
 cd mental-health-therapist
 ```
 
